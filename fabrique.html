@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>La Fabrique de soi — Coaching par Constance Blanc</title>
+<meta name="description" content="La Fabrique de soi : coaching individuel pour dirigeants, entrepreneurs et professionnels en transition, par Constance Blanc.">
+<meta property="og:title" content="La Fabrique de soi — Coaching par Constance Blanc"><meta property="og:description" content="La Fabrique de soi : coaching individuel pour dirigeants, entrepreneurs et professionnels en transition, par Constance Blanc."><meta property="og:type" content="website"><meta property="og:locale" content="fr_FR">
+<meta name="theme-color" content="#E9437E">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Hanken+Grotesk:wght@400;500;600;700&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<style>
+
+body{margin:0}
+a{color:inherit;text-decoration:none}
+.k{font:700 12px/1.3 'Hanken Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase;margin:0;display:flex;align-items:center;gap:10px}
+.k::before{content:"";width:10px;height:10px;background:currentColor;flex:none}
+.h{font-family:'Bricolage Grotesque','Arial Black',sans-serif;font-weight:800;text-transform:uppercase;letter-spacing:-.02em;line-height:.92;margin:0}
+.p{font:400 17px/1.65 'Hanken Grotesk',sans-serif;margin:0}
+.sub{font:400 15px/1.45 'Hanken Grotesk',sans-serif;opacity:.85;margin:0}
+.sec{padding:clamp(64px,8vw,128px) clamp(16px,4vw,56px);display:flex;flex-direction:column;gap:clamp(32px,4vw,56px)}
+.W{background:#fff;color:#C8102E}
+.R{background:#C8102E;color:#fff}
+.gr{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr))}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:52px;padding:0 30px;max-width:100%;box-sizing:border-box;font:700 13px/1.1 'Hanken Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;border:2px solid currentColor;border-radius:999px;box-shadow:0 6px 0 rgba(110,8,24,.35),0 16px 26px -10px rgba(110,8,24,.35),inset 0 2px 0 rgba(255,255,255,.3);transition:gap .3s ease,transform .2s ease,box-shadow .2s ease}
+.btn:hover{gap:20px;transform:translateY(-2px);box-shadow:0 8px 0 rgba(110,8,24,.35),0 20px 30px -10px rgba(110,8,24,.35),inset 0 2px 0 rgba(255,255,255,.3)}
+.btn:active{transform:translateY(5px);box-shadow:0 1px 0 rgba(110,8,24,.35),inset 0 2px 0 rgba(255,255,255,.2)}
+.lnk{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:46px;padding:0 24px;max-width:100%;box-sizing:border-box;font:700 12px/1.1 'Hanken Grotesk',sans-serif;letter-spacing:.14em;text-transform:uppercase;border:2px solid currentColor;border-radius:999px;box-shadow:0 4px 0 rgba(110,8,24,.35),inset 0 2px 0 rgba(255,255,255,.22);transition:gap .3s ease,transform .2s ease,box-shadow .2s ease}
+.lnk:hover{gap:18px;transform:translateY(-2px);box-shadow:0 6px 0 rgba(110,8,24,.35),inset 0 2px 0 rgba(255,255,255,.22)}
+.lnk:active{transform:translateY(3px);box-shadow:0 1px 0 rgba(110,8,24,.35)}
+.lg{display:inline-grid;grid-template-columns:auto auto auto;grid-template-rows:repeat(4,calc(var(--fs)*1.02));font-family:'Jost','Helvetica Neue',sans-serif;font-weight:300;font-size:var(--fs);line-height:1;text-transform:uppercase;color:#C8102E;align-items:center}
+.lg i{font-style:normal;display:inline-block}
+.lw{grid-column:1;grid-row:3;letter-spacing:.03em;white-space:nowrap}
+.lb{grid-column:2;grid-row:1/5;display:grid;grid-template-columns:auto auto;grid-template-rows:repeat(4,1fr);color:#C8102E;justify-items:start;align-items:center;font-weight:400}
+.lt{grid-column:3;grid-row:3}
+.in{box-sizing:border-box;width:100%;min-height:48px;padding:12px 0;background:transparent;border:2px solid #C8102E;color:#C8102E;font:400 17px/1.4 'Hanken Grotesk',sans-serif;outline:none;border-radius:18px;padding:12px 18px;box-shadow:inset 0 3px 6px rgba(200,16,46,.12)}
+.in:focus{border-bottom-width:4px}
+.row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.3fr);gap:12px 32px;padding:26px 0;border-top:2px solid #fff;align-items:baseline}
+@keyframes up2{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes wipe{from{clip-path:inset(0 0 100% 0)}to{clip-path:inset(0 0 0 0)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(200,16,46,.55)}100%{box-shadow:0 0 0 20px rgba(200,16,46,0)}}
+.fu{animation:up2 .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--dl,0s)}
+.ph{animation:wipe 1.5s cubic-bezier(.7,0,.2,1) .3s both}
+.tel{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:60;display:flex;align-items:center;background:#fff;color:#C8102E;min-height:64px;padding:0 18px;border:2px solid #C8102E;border-right:0;animation:ring 2.4s ease-out 2s infinite}
+.tel span{max-width:0;overflow:hidden;white-space:nowrap;font:700 15px/1 'Hanken Grotesk',sans-serif;letter-spacing:.06em;transition:max-width .4s ease,margin .4s ease}
+.tel:hover span,.tel:focus span{max-width:200px;margin-left:12px}
+.mic,.mic *{cursor:url(/assets/mic-red.svg) 10 10,auto}
+.btn,.lnk{position:relative}
+.btn::before,.lnk::before{content:"";position:absolute;inset:-16px}
+.btn::after,.lnk::after{content:"";position:absolute;right:-20px;top:-28px;width:40px;height:40px;background:url(/assets/hand-red.svg) no-repeat center/contain;opacity:0;transform:scale(.4);transform-origin:50% 90%;transition:opacity .25s ease,transform .25s ease;pointer-events:none}
+.btn:hover::after,.lnk:hover::after{opacity:1;transform:scale(1);animation:wave .55s ease-in-out infinite}
+
+.sec{border-radius:clamp(24px,3.2vw,48px)}
+footer{border-radius:clamp(24px,3.2vw,48px) clamp(24px,3.2vw,48px) 0 0}
+.ph{border-radius:clamp(24px,3vw,40px)}
+.tel{border-radius:999px 0 0 999px;box-shadow:0 6px 0 rgba(17,17,17,.2),0 14px 24px -8px rgba(17,17,17,.3),inset 0 2px 0 rgba(255,255,255,.3)}
+img{max-width:100%}
+@media (max-width:520px){.btn,.lnk{padding:0 20px;letter-spacing:.1em}}
+@keyframes wave{0%,100%{transform:rotate(-14deg) scale(1)}50%{transform:rotate(16deg) scale(1.1)}}
+@supports (animation-timeline:view()){.rv{animation:up2 linear both;animation-timeline:view();animation-range:entry 0% entry 40%}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+
+body{margin:0}
+.jr-lm,.jr-la{font-family:'Jost','Helvetica Neue',sans-serif;font-weight:300}
+.jr-lm{fill:currentColor}
+.jr-la{fill:#E9437E}
+.jr-sp{transform-box:fill-box;transform-origin:center;animation:jrSpin 2.4s linear infinite}
+.jr-spr{transform-box:fill-box;transform-origin:center;animation:jrSpin 3.2s linear infinite reverse}
+.jr-web{animation:jrWeb .7s linear infinite}
+.jr-belt{animation:jrWeb .8s linear infinite}
+.jr-sh{animation:jrSheet 6s linear infinite}
+.jr-clip{transform-box:fill-box;transform-origin:top;animation:jrReveal 6s ease-in-out infinite}
+.jr-page{animation:jrFade 6s linear infinite}
+.jr-head{animation:jrHead 6s ease-in-out infinite}
+.jr-led{animation:jrBlink 1.2s steps(2) infinite}
+@keyframes jrSpin{to{transform:rotate(360deg)}}
+@keyframes jrWeb{to{stroke-dashoffset:-26}}
+@keyframes jrSheet{0%{transform:translate(0,0);opacity:1}68%{transform:translate(520px,0);opacity:1}78%{transform:translate(540px,36px);opacity:0}100%{transform:translate(540px,36px);opacity:0}}
+@keyframes jrReveal{0%{transform:scaleY(0)}70%,100%{transform:scaleY(1)}}
+@keyframes jrFade{0%,92%{opacity:1}100%{opacity:0}}
+@keyframes jrHead{0%{transform:translateY(0);opacity:1}70%{transform:translateY(252px);opacity:1}76%,100%{transform:translateY(252px);opacity:0}}
+@keyframes jrBlink{50%{opacity:.2}}
+@media (prefers-reduced-motion:reduce){.jr-sp,.jr-spr,.jr-web,.jr-belt,.jr-sh,.jr-clip,.jr-page,.jr-head,.jr-led{animation:none}.jr-head{opacity:0}}
+.jr-i1{animation:jrI1 18s step-end infinite}.jr-i2{animation:jrI2 18s step-end infinite}.jr-i3{animation:jrI3 18s step-end infinite}
+@keyframes jrI1{0%{opacity:1}33.333%{opacity:0}100%{opacity:0}}
+@keyframes jrI2{0%{opacity:0}33.333%{opacity:1}66.666%{opacity:0}100%{opacity:0}}
+@keyframes jrI3{0%{opacity:0}66.666%{opacity:1}100%{opacity:1}}
+@media (prefers-reduced-motion:reduce){.jr-i2,.jr-i3{animation:none;opacity:0}.jr-i1{animation:none;opacity:1}}
+
+body{margin:0}
+.sv-v{display:block;width:100%;aspect-ratio:2/1;height:auto;object-fit:cover;background:#E8DCC4}
+@media (max-width:700px){.sv-v{aspect-ratio:3/4;object-position:36% 50%}}
+@media (prefers-reduced-motion:reduce){.sv-v{animation:none}}
+
+.dc-wrap{position:relative;min-width:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}html,body{overflow-x:clip}
+</style>
+</head>
+<body>
+
+<div class="mic" style="position:relative;min-width:0;background:#fff;color:#C8102E;font-family:'Hanken Grotesk',sans-serif">
+
+<a href="tel:+33699365186" class="tel" aria-label="Appeler Constance au 06 99 36 51 86"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C8102E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span>06 99 36 51 86</span></a>
+
+<header style="position:absolute;top:0;left:0;right:0;z-index:20;display:flex;flex-wrap:wrap;gap:12px 24px;align-items:center;justify-content:space-between;padding:20px clamp(16px,4vw,56px)">
+<div style="display:flex;align-items:center;gap:clamp(16px,3vw,40px)">
+<a href="/" aria-label="Évidemment l'agence, accueil"><span class="lg" style="--fs:14px" role="img" aria-label="Évidemment l'agence"><span class="lw"><i>É</i><i>V</i><i>I</i><i>D</i><i>E</i><i>M</i><i>M</i></span><span class="lb"><i>L</i><i>'</i><i>A</i><i>G</i><i>E</i><i>N</i><i>C</i><i>E</i></span><span class="lt"><i>T</i></span></span></a>
+<a href="/" style="display:inline-flex;align-items:center;gap:12px;min-height:44px;font:700 13px/1 'Hanken Grotesk',sans-serif;letter-spacing:.16em;text-transform:uppercase"><span style="display:flex;flex-direction:column;gap:6px"><span style="display:block;width:28px;height:2px;background:currentColor"></span><span style="display:block;width:28px;height:2px;background:currentColor"></span></span>Menu</a>
+</div>
+</header>
+
+<!-- HERO -->
+<section style="display:flex;flex-wrap:wrap;align-items:stretch;min-height:920px;overflow:hidden">
+<div style="flex:1 1 520px;min-width:0;display:flex;flex-direction:column;justify-content:flex-end;gap:32px;padding:150px clamp(16px,4vw,56px) 72px">
+<p class="k fu" style="--dl:.2s">La Fabrique de soi · Coaching · Paris 16e</p>
+<h1 class="h fu" style="--dl:.5s;font-size:clamp(44px,7.2vw,124px)">Reprendre confiance grâce aux mots.</h1>
+<p class="p fu" style="--dl:.9s;max-width:540px">Vous accompagner pour mieux comprendre qui vous êtes, ce que vous voulez porter et la manière dont vous souhaitez prendre votre place.</p>
+<div class="fu" style="--dl:1.2s;display:flex;flex-wrap:wrap;gap:16px 32px;align-items:center"><a href="#offres" class="lnk">Voir les accompagnements</a></div>
+</div>
+<div class="ph" style="flex:0 1 42%;min-width:min(340px,100%);min-height:clamp(440px,78vw,760px);margin:clamp(12px,2vw,24px);position:relative;overflow:hidden;background:#C8102E">
+<img src="/assets/constance.jpg" alt="Constance Blanc, coach" style="position:absolute;bottom:0;left:50%;transform:translateX(-50%);height:100%;width:auto;max-width:none;mix-blend-mode:multiply;filter:grayscale(1) contrast(1.05);display:block">
+</div>
+</section>
+
+<!-- LE MOT JUSTE -->
+<section class="sec R" style="gap:clamp(32px,5vw,64px);padding-top:clamp(72px,10vw,150px);padding-bottom:clamp(72px,10vw,150px)">
+<p class="k rv">Le point de départ</p>
+<p class="h rv" style="font-size:clamp(44px,8vw,140px)">Le mot doit être juste, choisi et approprié.</p>
+<div class="gr rv" style="gap:40px;align-items:start;border-top:2px solid #fff;padding-top:32px">
+<p class="p" style="font-size:19px;max-width:620px">« Entrepreneur depuis plus de trente ans et forte de quinze ans d'expérience dans la communication des dirigeants et des entreprises, j'ai appris une chose essentielle : l'hésitation et le balbutiement n'ont plus leur place. »</p>
+<p class="k">Constance Blanc</p>
+</div>
+</section>
+
+<!-- POUR QUI -->
+<section class="sec W">
+<div class="rv" style="display:flex;flex-direction:column;gap:16px"><p class="k">Pour qui</p><h2 class="h" style="font-size:clamp(40px,6vw,96px);max-width:1000px">Pour celles et ceux qui changent de dimension.</h2></div>
+<div class="gr rv" style="border:2px solid #C8102E;border-radius:32px;overflow:hidden">
+<div style="padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;gap:16px;border-right:2px solid #C8102E;min-height:320px"><p class="h" style="font-size:48px">01</p><h3 class="h" style="font-size:clamp(24px,2.4vw,34px);line-height:1">Dirigeants et entrepreneurs</h3><p class="p" style="font-size:16px">En phase d'accélération ou de prise de risque, qui doivent porter un discours plus net, plus fort, plus décisif.</p></div>
+<div style="padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;gap:16px;border-right:2px solid #C8102E;min-height:320px"><p class="h" style="font-size:48px">02</p><h3 class="h" style="font-size:clamp(24px,2.4vw,34px);line-height:1">Professionnels en transition</h3><p class="p" style="font-size:16px">En repositionnement ou en quête de sens, qui veulent clarifier leur trajectoire et la raconter avec justesse.</p></div>
+<div style="padding:clamp(24px,3vw,44px);display:flex;flex-direction:column;gap:16px;min-height:320px"><p class="h" style="font-size:48px">03</p><h3 class="h" style="font-size:clamp(24px,2.4vw,34px);line-height:1">Adultes en recherche d'emploi</h3><p class="p" style="font-size:16px">Qui préparent des entretiens et veulent y entrer avec un discours clair, une posture assumée, des mots qui rassurent.</p></div>
+</div>
+</section>
+
+<!-- CE QUI CHANGE -->
+<section class="sec R">
+<div class="rv" style="display:flex;flex-direction:column;gap:16px"><p class="k">Les objectifs</p><h2 class="h" style="font-size:clamp(56px,10vw,170px)">Ce qui change.</h2></div>
+<div class="rv" style="display:flex;flex-direction:column">
+<div class="row"><p class="h" style="font-size:clamp(32px,4.4vw,68px)">Clarifier</p><p class="p" style="font-size:19px">Un positionnement professionnel fort et lisible.</p></div>
+<div class="row"><p class="h" style="font-size:clamp(32px,4.4vw,68px)">Aligner</p><p class="p" style="font-size:19px">Discours, posture et ambition, pour qu'ils disent la même chose.</p></div>
+<div class="row"><p class="h" style="font-size:clamp(32px,4.4vw,68px)">Assumer</p><p class="p" style="font-size:19px">Affirmer sa légitimité et asseoir son autorité.</p></div>
+<div class="row"><p class="h" style="font-size:clamp(32px,4.4vw,68px)">Oser</p><p class="p" style="font-size:19px">Des choix et des prises de parole décisifs.</p></div>
+<div class="row" style="border-bottom:2px solid #fff"><p class="h" style="font-size:clamp(32px,4.4vw,68px)">Rayonner</p><p class="p" style="font-size:19px">Déclencher des opportunités concrètes : emploi, clients, partenariats.</p></div>
+</div>
+</section>
+
+<!-- MÉTHODE -->
+<section class="sec W">
+<div class="rv" style="display:flex;flex-direction:column;gap:16px"><p class="k">La méthode</p><h2 class="h" style="font-size:clamp(40px,6vw,96px);max-width:1000px">Un lexique à vous, des mises en situation réelles.</h2></div>
+<div class="gr rv" style="grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:56px 72px">
+<div style="display:flex;flex-direction:column">
+<p class="k" style="padding-bottom:16px">Comment nous travaillons</p>
+<div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;padding:22px 0;border-top:2px solid #C8102E"><p class="h" style="font-size:34px">01</p><div style="display:flex;flex-direction:column;gap:6px"><p class="h" style="font-size:24px;line-height:1">Apprendre à vous connaître</p><p class="p" style="font-size:15px">Clarifier l'expertise, le parcours, les points de rupture et les ambitions.</p></div></div>
+<div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;padding:22px 0;border-top:2px solid #C8102E"><p class="h" style="font-size:34px">02</p><div style="display:flex;flex-direction:column;gap:6px"><p class="h" style="font-size:24px;line-height:1">Travailler votre posture</p><p class="p" style="font-size:15px">Une posture professionnelle claire, assumée et crédible.</p></div></div>
+<div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;padding:22px 0;border-top:2px solid #C8102E"><p class="h" style="font-size:34px">03</p><div style="display:flex;flex-direction:column;gap:6px"><p class="h" style="font-size:24px;line-height:1">Mises en situation réelles</p><p class="p" style="font-size:15px">Pour renforcer l'aisance orale, la réactivité et la confiance.</p></div></div>
+<div style="display:grid;grid-template-columns:64px minmax(0,1fr);gap:12px;padding:22px 0;border-top:2px solid #C8102E;border-bottom:2px solid #C8102E"><p class="h" style="font-size:34px">04</p><div style="display:flex;flex-direction:column;gap:6px"><p class="h" style="font-size:24px;line-height:1">Lire les attentes du marché</p><p class="p" style="font-size:15px">Pour ajuster le discours et les décisions.</p></div></div>
+</div>
+<div class="R" style="display:flex;flex-direction:column;gap:24px;padding:clamp(28px,4vw,56px)">
+<p class="k">Ce avec quoi vous repartez</p>
+<p class="h" style="font-size:clamp(26px,3vw,44px);line-height:1">Un lexique dédié à votre positionnement, vos mots clés, votre expertise.</p>
+<ul style="margin:0;padding:0;list-style:none;display:flex;flex-direction:column;gap:14px;font:500 16px/1.5 'Hanken Grotesk',sans-serif">
+<li style="border-top:2px solid #fff;padding-top:14px">Un discours clair, structuré et impactant</li>
+<li style="border-top:2px solid #fff;padding-top:14px">Des pitchs et des punchlines préparés</li>
+<li style="border-top:2px solid #fff;padding-top:14px">Des entretiens simulés, rejoués jusqu'à la justesse</li>
+<li style="border-top:2px solid #fff;padding-top:14px">La posture professionnelle juste et différenciante à adopter</li>
+<li style="border-top:2px solid #fff;padding-top:14px">Des questions puissantes qui font émerger votre véritable axe professionnel</li>
+</ul>
+</div>
+</div>
+</section>
+
+<!-- OFFRES -->
+<section id="offres" class="sec W" style="padding-top:0">
+<div class="rv" style="display:flex;flex-direction:column;gap:16px"><p class="k">Les accompagnements</p><h2 class="h" style="font-size:clamp(40px,6vw,96px)">Une séance, ou un vrai chemin.</h2></div>
+<div class="gr rv" style="grid-template-columns:repeat(auto-fit,minmax(min(260px,100%),1fr));border:2px solid #C8102E;border-radius:32px;overflow:hidden">
+<article style="padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:16px;border-right:2px solid #C8102E"><p class="k">Séance individuelle</p><p class="h" style="font-size:clamp(34px,3.4vw,48px)">1 séance</p><p class="sub">1 heure</p><p class="p" style="font-size:15px">Une séance ciblée pour clarifier une problématique précise, débloquer un point de friction et repartir avec des décisions et des outils précis.</p></article>
+<article style="padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:16px;border-right:2px solid #C8102E"><p class="k">Positionnement &amp; décision</p><p class="h" style="font-size:clamp(34px,3.4vw,48px)">3 séances</p><p class="sub">3 × 1 heure</p><p class="p" style="font-size:15px">Un travail de fond pour clarifier son positionnement, aligner son discours et assumer ses choix professionnels structurants.</p></article>
+<article style="padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:16px;border-right:2px solid #C8102E"><p class="k">Accélération &amp; impact</p><p class="h" style="font-size:clamp(34px,3.4vw,48px)">5 séances</p><p class="sub">5 × 1 heure</p><p class="p" style="font-size:15px">Un accompagnement stratégique pour passer un cap, affirmer sa valeur et faire de sa parole un levier de croissance.</p></article>
+<article class="R" style="padding:clamp(24px,3vw,40px);display:flex;flex-direction:column;gap:16px"><p class="k">Transition majeure</p><p class="h" style="font-size:clamp(34px,3.4vw,48px)">8 séances</p><p class="sub">8 × 1 heure</p><p class="p" style="font-size:15px">Un espace de travail en profondeur pour changer de dynamique, prendre des décisions engageantes et repositionner durablement sa trajectoire.</p></article>
+</div>
+<p class="sub">Tarifs communiqués sur demande. Rendez-vous à Paris 16e.</p>
+</section>
+
+<!-- LIEN RP -->
+<section class="sec W" style="padding-top:0">
+<div class="gr rv" style="gap:40px 80px;align-items:center;border-top:2px solid #C8102E;padding-top:clamp(48px,6vw,96px)">
+<h2 class="h" style="font-size:clamp(34px,4.8vw,76px)">Coacher, depuis l'intérieur de la presse.</h2>
+<div style="display:flex;flex-direction:column;gap:20px"><p class="p">Chaque jour, Constance prépare des dirigeants à parler aux journalistes : media training, interviews, prises de parole sensibles. La Fabrique de soi applique cette exigence à celles et ceux qui n'ont pas besoin d'une agence, mais d'un mot juste, au bon moment.</p><div><a href="/#methode" class="lnk">Découvrir les relations presse <span aria-hidden="true">→</span></a></div></div>
+</div>
+</section>
+
+<!-- TÉMOIGNAGES -->
+<section class="sec R">
+<p class="k">Ils / elles ont choisi de se faire accompagner</p>
+<p class="h" style="font-size:clamp(30px,4.6vw,72px);line-height:1;max-width:1000px">[À COMPLÉTER] Le témoignage d'une personne accompagnée, dans ses mots.</p>
+<p class="sub">Prénom · Fonction · Entreprise si accord · Photo si accord · Transformation vécue. Aucun témoignage n'a encore été fourni : rien n'est inventé. Chaque personne doit avoir donné son accord écrit.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="W" style="padding:clamp(72px,10vw,150px) clamp(16px,4vw,56px);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(380px,100%),1fr));gap:56px 96px">
+<div style="display:flex;flex-direction:column;gap:32px">
+<h2 class="h" style="font-size:clamp(40px,6.4vw,108px)">Vous cherchez votre prochaine étape ?</h2>
+<div style="display:flex;flex-direction:column;gap:6px"><a href="tel:+33699365186" class="p" style="font-size:24px;font-weight:700">06 99 36 51 86</a><a href="mailto:constance@evidemmentlagence.com" class="p" style="font-size:20px">constance@evidemmentlagence.com</a><p class="p" style="font-size:16px">Paris 16e</p></div>
+</div>
+<form action="mailto:constance@evidemmentlagence.com" method="post" enctype="text/plain" style="display:flex;flex-direction:column;gap:16px;max-width:620px;width:100%">
+<div class="gr" style="grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:16px">
+<div><label for="f-nom" class="k">Nom</label><input id="f-nom" name="Nom" class="in" type="text" required></div>
+<div><label for="f-prenom" class="k">Prénom</label><input id="f-prenom" name="Prénom" class="in" type="text" required></div>
+</div>
+<div class="gr" style="grid-template-columns:repeat(auto-fit,minmax(min(200px,100%),1fr));gap:16px">
+<div><label for="f-soc" class="k">Société</label><input id="f-soc" name="Société" class="in" type="text"></div>
+<div><label for="f-sec" class="k">Secteur</label><input id="f-sec" name="Secteur" class="in" type="text"></div>
+</div>
+<div><label for="f-msg" class="k">Votre demande</label><textarea id="f-msg" name="Demande" class="in" rows="4" required></textarea></div>
+<div><button type="submit" class="btn" style="background:#C8102E;color:#fff;border-color:#C8102E;cursor:pointer">Envoyer <span aria-hidden="true">→</span></button></div>
+</form>
+</section>
+
+<footer class="R" style="padding:56px clamp(16px,4vw,56px);display:flex;flex-wrap:wrap;gap:32px 64px;justify-content:space-between;align-items:flex-start">
+<div style="display:flex;flex-direction:column;gap:12px"><p class="h" style="font-size:28px">Évidemment l'agence</p><p class="sub">Relations presse B2B · La Fabrique de soi · Paris</p></div>
+<nav aria-label="Pied de page" style="display:flex;flex-wrap:wrap;gap:12px 32px;font:600 14px/1.4 'Hanken Grotesk',sans-serif"><a href="/">Relations presse</a><a href="/fabrique.html">La Fabrique de soi</a><a href="#contact">Contact</a><a href="https://www.linkedin.com/in/constance-tillaye-blanc-543ba2142">LinkedIn</a><a href="#contact">Mentions légales</a><a href="#contact">Politique de confidentialité</a></nav>
+</footer>
+
+</div>
+
+<script>
+(function(){var m=document.getElementById('menu');if(!m)return;
+document.addEventListener('click',function(e){var t=e.target.closest('[data-menu]');if(!t)return;
+var open=t.getAttribute('data-menu')==='open';m.hidden=!open;document.body.style.overflow=open?'hidden':'';});
+document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){m.hidden=true;document.body.style.overflow='';}});})();
+</script>
+</body>
+</html>
