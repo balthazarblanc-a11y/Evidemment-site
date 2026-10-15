@@ -32,7 +32,7 @@ a{color:inherit;text-decoration:none}
 .lg{display:inline-grid;grid-template-columns:auto auto auto;grid-template-rows:repeat(4,calc(var(--fs)*.84));font-family:'Jost','Helvetica Neue',sans-serif;font-weight:300;font-size:var(--fs);line-height:1;text-transform:uppercase;color:#111;align-items:center}
 .lg i{font-style:normal;display:inline-block}
 .lw{grid-column:1;grid-row:3;letter-spacing:.03em;margin-right:-.03em;white-space:nowrap}
-.lb{grid-column:2;grid-row:1/5;display:grid;column-gap:0;grid-template-columns:auto auto;grid-template-rows:repeat(4,1fr);color:var(--ag,#E9437E);justify-items:start;align-items:center}
+.lb{grid-column:2;grid-row:1/5;display:grid;column-gap:0;grid-template-columns:auto auto;grid-template-rows:repeat(4,1fr);color:var(--ag,#E9437E);justify-items:center;align-items:center;margin:0 -.1em 0 -.26em}
 .lt{grid-column:3;grid-row:3}
 @keyframes up{from{opacity:0;transform:translateY(.5em)}to{opacity:1;transform:none}}
 @keyframes drop{from{opacity:0;transform:translateY(-1.3em)}to{opacity:1;transform:none}}
@@ -42,7 +42,7 @@ a{color:inherit;text-decoration:none}
 @keyframes ring{0%{box-shadow:0 0 0 0 rgba(233,67,126,.55)}100%{box-shadow:0 0 0 20px rgba(233,67,126,0)}}
 .lw i,.lt i{animation:up .8s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0)*70ms)}
 .lb i{animation:drop .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(1.2s + var(--i,0)*170ms)}
-.lg.st i{animation:none}
+.lg.st i{animation:none}.lg.st .lb{margin:0}
 .fu{animation:up2 .9s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--dl,0s)}
 .ph{animation:wipe 1.5s cubic-bezier(.7,0,.2,1) .4s both}
 .mq{display:flex;width:max-content;animation:mq 32s linear infinite}
@@ -119,8 +119,8 @@ html{scroll-behavior:smooth}html,body{overflow-x:clip}
 
 <!-- HERO -->
 <section id="accueil" style="display:flex;flex-wrap:wrap;align-items:stretch;min-height:920px;overflow:hidden">
-<div style="flex:1 1 560px;min-width:0;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding:120px clamp(16px,4vw,56px) 64px">
-<span class="lg" style="--fs:clamp(30px,6.6vw,118px)" role="img" aria-label="Évidemment l'agence"><span class="lw"><i style="--i:0">É</i><i style="--i:1">V</i><i style="--i:2">I</i><i style="--i:3">D</i><i style="--i:4">E</i><i style="--i:5">M</i><i style="--i:6">M</i></span><span class="lb"><i style="--i:0">L</i><i style="--i:0">'</i><i style="--i:1">A</i><i style="--i:1">G</i><i style="--i:2">E</i><i style="--i:2">N</i><i style="--i:3">C</i><i style="--i:3">E</i></span><span class="lt"><i style="--i:7">T</i></span></span>
+<div style="flex:1 1 560px;min-width:0;container-type:inline-size;display:flex;flex-direction:column;justify-content:space-between;gap:48px;padding:120px clamp(16px,4vw,56px) 64px">
+<span class="lg" style="--fs:clamp(26px,14.2cqi,150px)" role="img" aria-label="Évidemment l'agence"><span class="lw"><i style="--i:0">É</i><i style="--i:1">V</i><i style="--i:2">I</i><i style="--i:3">D</i><i style="--i:4">E</i><i style="--i:5">M</i><i style="--i:6">M</i></span><span class="lb"><i style="--i:0">L</i><i style="--i:0">'</i><i style="--i:1">A</i><i style="--i:1">G</i><i style="--i:2">E</i><i style="--i:2">N</i><i style="--i:3">C</i><i style="--i:3">E</i></span><span class="lt"><i style="--i:7">T</i></span></span>
 <div style="display:flex;flex-direction:column;gap:28px">
 <h1 class="h fu" style="--dl:2.6s;font-size:clamp(26px,3.3vw,54px);max-width:760px">Des histoires à raconter.<br><span style="color:#E9437E">Des personnalités à révéler.</span></h1>
 <p class="p fu" style="--dl:2.9s;max-width:520px">Relations presse, communication et accompagnement pour celles et ceux qui ont quelque chose à dire, à défendre ou à faire émerger.</p>
