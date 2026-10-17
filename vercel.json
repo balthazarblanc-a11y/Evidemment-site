@@ -1,6 +1,26 @@
 {
   "cleanUrls": true,
   "headers": [
-    { "source": "/assets/(.*)", "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }] }
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    }
+  ],
+  "redirects": [
+    {
+      "source": "/fabrique",
+      "destination": "/mentorat",
+      "permanent": true
+    },
+    {
+      "source": "/fabrique.html",
+      "destination": "/mentorat",
+      "permanent": true
+    }
   ]
 }
