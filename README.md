@@ -4,4 +4,4 @@ Site statique (HTML/CSS/JS, sans build). Déployé sur Vercel à chaque push sur
 
 - `index.html` — page d'accueil (relations presse)
 - `fabrique.html` — La Fabrique de soi
-- `assets/` — images, vidéo du kiosque, curseurs
+- `assets/` — images, curseurs
