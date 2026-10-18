@@ -53,6 +53,15 @@ a{color:inherit;text-decoration:none}
 .mq{display:flex;width:max-content;animation:mq 32s linear infinite}
 .dk article .k::before{background:#561611}
 .rl .mq{margin-right:0}
+.rs{display:block}
+.rs input{-webkit-appearance:none;appearance:none;width:min(420px,100%);height:28px;background:transparent;cursor:grab;margin:0;display:block;touch-action:pan-y}
+.rs input:active{cursor:grabbing}
+.rs input::-webkit-slider-runnable-track{height:4px;border-radius:4px;background:rgba(239,227,210,.35)}
+.rs input::-moz-range-track{height:4px;border-radius:4px;background:rgba(239,227,210,.35)}
+.rs input::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;margin-top:-9px;border-radius:50%;background:#CAD6E6;border:2px solid #EFE3D2;box-shadow:0 2px 0 rgba(0,0,0,.35)}
+.rs input::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#CAD6E6;border:2px solid #EFE3D2;box-shadow:0 2px 0 rgba(0,0,0,.35)}
+.rs input:focus-visible{outline:2px solid #CAD6E6;outline-offset:4px;border-radius:6px}
+@media (prefers-reduced-motion:reduce){.rs{display:none}}
 @media (prefers-reduced-motion:reduce){.rl{overflow-x:auto!important}}
 .tel{position:fixed;right:0;top:50%;transform:translateY(-50%);z-index:60;display:flex;align-items:center;background:#561611;color:#EFE3D2;min-height:64px;padding:0 18px;border:2px solid #561611;border-right:0;animation:ring 2.4s ease-out 3s infinite}
 .tel span{max-width:0;overflow:hidden;white-space:nowrap;font:700 15px/1 'Hanken Grotesk',sans-serif;letter-spacing:.06em;transition:max-width .4s ease,margin .4s ease}
@@ -677,6 +686,7 @@ html{scroll-behavior:smooth}html,body{overflow-x:clip}
 </article>
 </div>
 </div></div>
+<div class="rs" style="padding:8px clamp(16px,4vw,56px) 0"><input id="rp-slider" type="range" min="0" max="1000" value="0" step="1" aria-label="Faire défiler la revue de presse : revenir en arrière ou avancer plus vite"></div>
 </section>
 
 <!-- CTA FINAL -->
@@ -725,6 +735,16 @@ html{scroll-behavior:smooth}html,body{overflow-x:clip}
 document.addEventListener('click',function(e){var t=e.target.closest('[data-menu]');if(!t)return;
 var open=t.getAttribute('data-menu')==='open';m.hidden=!open;document.body.style.overflow=open?'hidden':'';});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&!m.hidden){m.hidden=true;document.body.style.overflow='';}});})();
+(function(){var rl=document.querySelector('#revue-de-presse .rl'),r=document.getElementById('rp-slider');if(!rl||!r)return;
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion:reduce)').matches)return;
+var mq=rl.querySelector('.mq'),DUR=240000,pos=0,last=0,held=false,resume=0;mq.style.animation='none';
+function set(p){pos=((p%1)+1)%1;mq.style.transform='translateX('+(-pos*mq.scrollWidth/2)+'px)';r.value=Math.round(pos*1000);}
+function pause(ms){resume=performance.now()+ms;}
+r.addEventListener('input',function(){set(r.value/1000);pause(1500);});
+['pointerdown','touchstart'].forEach(function(e){r.addEventListener(e,function(){held=true;},{passive:true});});
+['pointerup','pointercancel','touchend','blur'].forEach(function(e){r.addEventListener(e,function(){held=false;pause(800);});});
+function tick(t){var dt=last?t-last:0;last=t;if(!held&&t>=resume)set(pos+dt/DUR);requestAnimationFrame(tick);}
+requestAnimationFrame(tick);})();
 </script>
 </body>
 </html>
