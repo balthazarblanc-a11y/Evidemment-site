@@ -21,6 +21,17 @@
       "source": "/fabrique.html",
       "destination": "/mentorat",
       "permanent": true
+    },
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "evidemmentlagence.com"
+        }
+      ],
+      "destination": "https://www.evidemmentlagence.com/$1",
+      "permanent": true
     }
   ]
 }
