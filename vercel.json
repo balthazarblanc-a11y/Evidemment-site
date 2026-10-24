@@ -55,6 +55,11 @@
   ],
   "redirects": [
     {
+      "source": "/relations-presse",
+      "destination": "/",
+      "permanent": false
+    },
+    {
       "source": "/fabrique",
       "destination": "/mentorat",
       "permanent": true
